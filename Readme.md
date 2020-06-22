@@ -28,6 +28,6 @@ Backup your PostgresDB to your GCP storage bucket.
     crontab -e 
 
     # m h  dom mon dow   command
-    30 2 * * * docker run -i -e GS_URL=<<URL_TO_YOUR_GCP_BUCKET>> -e POSTGRES_HOST=<<POSTGRESDB_SERVER>> -e POSTGRES_PORT=<<POSTGRESDB_PORT>> -e POSTGRES_DATABASE=<<DATABASE_NAME>> -e POSTGRES_USERNAME=<<DATABASE_USERNAME>> -e POSTGRES_PASSWORD=<<DATABASE_PW>> -e S3_BUCKET_NAME=<<S3_BUCKET_NAME>> --rm adhook/docker-postgres-s3-backup
+    30 2 * * * docker run -i -e GS_URL=<<URL_TO_YOUR_GCP_BUCKET>> -e POSTGRES_HOST=<<POSTGRESDB_SERVER>> -e POSTGRES_PORT=<<POSTGRESDB_PORT>> -e POSTGRES_DATABASE=<<DATABASE_NAME>> -e POSTGRES_USERNAME=<<DATABASE_USERNAME>> -e POSTGRES_PASSWORD=<<DATABASE_PW>> -e S3_BUCKET_NAME=<<S3_BUCKET_NAME>> --rm docker.pkg.github.com/adhookio/docker-postgres-gcp-backup/docker-postgres-gcp-backup:latest
 
     

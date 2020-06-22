@@ -8,6 +8,11 @@ mv dump postgresdb-$TIMESTAMP
 tar cf postgresdb-$TIMESTAMP.tar postgresdb-$TIMESTAMP
 cp postgresdb-$TIMESTAMP.tar /root
 
+sed -i "s/accesskey/$GS_ACCESS_KEY/g" /root/.boto
+sed -i "s/secretkey/$GS_SECRET_ACCESS_KEY/g" /root/.boto
+
+cat /root/.boto
+
 # Upload to gcp
 cd /root && ls -a && gsutil cp postgresdb-$TIMESTAMP.tar ${GS_URL}
 

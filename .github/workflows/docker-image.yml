@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker.pkg.github.com/adhookio/docker-postgres-gcp-backup/docker-postgres-gcp-backup:latest && docker login -u ${{ secrets.PUBLISH_USER }} -p {{ secrets.PUBLISH_PASSWORD }} docker.pkg.github.com && docker push docker.pkg.github.com/adhookio/docker-postgres-gcp-backup/docker-postgres-gcp-backup:latest
+      run: docker build . --file Dockerfile --tag docker.pkg.github.com/adhookio/docker-postgres-gcp-backup/docker-postgres-gcp-backup:latest && docker push docker.pkg.github.com/adhookio/docker-postgres-gcp-backup/docker-postgres-gcp-backup:latest

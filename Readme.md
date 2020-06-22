@@ -1,4 +1,4 @@
-docker-postgres-s3-backup
+docker-postgres-gcp-backup
 ============
 
 # Description

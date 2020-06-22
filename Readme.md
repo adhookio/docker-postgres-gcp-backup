@@ -1,7 +1,6 @@
 docker-postgres-s3-backup ![Docker Image CI](https://github.com/adhookio/docker-postgres-gcp-backup/workflows/Docker%20Image%20CI/badge.svg?branch=master)
 ============
 
-# Description
 Backup your PostgresDB to your GCP storage bucket.
 
 # Usage

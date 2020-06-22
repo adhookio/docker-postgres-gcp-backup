@@ -16,7 +16,7 @@ Backup your PostgresDB to your GCP storage bucket.
         -e POSTGRES_USERNAME=<<DATABASE_USERNAME>> \
         -e POSTGRES_PASSWORD=<<DATABASE_PW>> \ 
         --rm \
-        docker.pkg.github.com/adhookio/docker-postgres-gcp-backup/docker-postgres-gcp-backup:latest \
+        docker.pkg.github.com/adhookio/docker-postgres-gcp-backup/docker-postgres-gcp-backup:latest
 
 👉 The container will be deleted after the backup (`--rm` Option).
 
